@@ -14,8 +14,25 @@ header .container {
   justify-content: space-between;
 }
 
+header a {
+  color: var(--text);
+}
+
+.logo {
+  color: var(--primary);
+}
+
 nav ul {
   display: flex;
   align-items: center;
   gap: 1.5em;
+}
+
+nav a {
+  transition: 0.25s ease-in;
+}
+
+nav a:hover,
+:focus {
+  color: var(--accent);
 }

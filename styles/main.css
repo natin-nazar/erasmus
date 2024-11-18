@@ -16,8 +16,7 @@
 
 #hero .container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .wrapper {
@@ -37,7 +36,7 @@
 }
 
 .wrapper button {
-  padding: 16px 32px;
+  padding: 1em 2em;
   background-color: var(--primary);
   color: var(--background);
   border-radius: 0.5em;
@@ -54,6 +53,101 @@
 
 /* second section */
 #objectives {
-  background-color: var(--secondary);
   color: var(--text);
+}
+
+#objectives ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+#objectives li {
+  padding: 1.5em;
+  border: 1px solid var(--primary);
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: 0.25s ease-in;
+}
+
+#objectives li:hover,
+:focus {
+  scale: 1.05;
+}
+
+/* third section */
+#destinations p {
+  margin-bottom: 2em;
+}
+
+#destinations ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  gap: 0.3em;
+}
+
+#destinations li {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* fourth section */
+
+/* fifth section */
+#testimonials ul {
+  display: flex;
+  gap: 3em;
+}
+
+#testimonials li {
+  padding: 1em;
+  border: 1px solid var(--primary);
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: 0.25s ease-in;
+}
+
+#testimonials li:hover,
+:focus {
+  scale: 1.05;
+}
+
+#testimonials h4 {
+  margin-bottom: 0.5em;
+}
+
+/* sixth section */
+
+/* seventh section */
+
+/* faq */
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  cursor: pointer;
+  background-color: var(--background);
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 5px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 10px;
 }
