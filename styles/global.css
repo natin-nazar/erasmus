@@ -148,6 +148,17 @@ ul {
   background: var(--primary);
 }
 
+/* Testimonios */
+blockquote {
+  padding: 1em;
+  border: 1px solid var(--primary);
+  border-radius: 1em;
+}
+
+blockquote:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 /* Section Styles */
 section {
   padding: 3rem 0;
