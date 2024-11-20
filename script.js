@@ -1,10 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const faqItems = document.querySelectorAll(".faq-item");
+document.addEventListener("DOMContentLoaded", () => {
+  const elementsToAnimate = document.querySelectorAll("[data-animate]");
 
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    question.addEventListener("click", () => {
-      item.classList.toggle("active");
-    });
-  });
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  elementsToAnimate.forEach((el) => observer.observe(el));
 });
