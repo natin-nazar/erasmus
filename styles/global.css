@@ -166,6 +166,19 @@ ul {
   gap: 8em;
 }
 
+#desrtinos img {
+  width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  #destinos .container {
+    flex-direction: column;
+  }
+  #destinos img {
+    width: 300px;
+  }
+}
+
 /* Testimonios */
 blockquote {
   padding: 1em;
@@ -178,8 +191,11 @@ blockquote:not(:last-child) {
 }
 
 /* Section Styles */
-section:not(first-of-type) section {
+section {
   padding: 9em 0;
+}
+
+section:not(.hero) {
   animation-name: appear;
   animation-duration: 1s;
   animation-timeline: scroll(y);
@@ -281,4 +297,37 @@ section:not(first-of-type) section {
     font-size: 0.875rem;
     padding: 0.5rem 1rem;
   }
+}
+
+.historias article {
+  padding: 1em;
+  border: 1px solid var(--primary);
+  border-radius: 1em;
+}
+
+.historias article:not(last-child) {
+  margin-bottom: 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.gallery img {
+  width: calc((100% / 3) - 1em);
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery img {
+    width: calc((100% / 1) - 1em);
+  }
+}
+
+.consejos ul {
+  margin-left: 1em;
+  list-style: circle;
 }
