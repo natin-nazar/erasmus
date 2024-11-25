@@ -4,117 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historias Erasmus - IES Cardenal López de Mendoza</title>
+    <link rel="icon" href="images/favicon.ico" type="image/svg+xml" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="header__container container">
-        <h1 class="header__logo">Programa Erasmus</h1>
+        <a href="index.html" class="header__logo">Programa Erasmus</a>
+
         <nav class="header__nav">
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Inicio</a></li>
-            <li>
-              <a href="historias.html" class="nav__link">Historias</a>
-            </li>
-            <li>
-              <a href="recursos.html" class="nav__link">Recursos</a>
-            </li>
+            <li><a href="historias.html" class="nav__link">Historias</a></li>
+            <li><a href="recursos.html" class="nav__link">Recursos</a></li>
           </ul>
         </nav>
+
+        <button class="mobile-menu-button" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
-    <!-- Main Section -->
+    <div class="mobile-menu">
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="historias.html" class="nav__link">Historias</a></li>
+          <li><a href="recursos.html" class="nav__link">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
     <main>
-      <section>
+      <section class="hero">
         <div class="container">
-          <h1>Historias Erasmus: Experiencias que Inspiran</h1>
-          <p>
-            Descubre las vivencias de estudiantes y profesores del IES Cardenal
-            López de Mendoza que han participado en el programa Erasmus. Estas
-            historias destacan el impacto positivo del intercambio cultural y
-            académico en sus vidas.
+          <h1 class="hero__title animate">
+            Historias Erasmus: Experiencias que Inspiran
+          </h1>
+          <p class="hero__text animate">
+            Descubre las vivencias de estudiantes y profesores que han
+            participado en el programa Erasmus. Estas historias destacan el
+            impacto positivo del intercambio cultural y académico en sus vidas.
           </p>
         </div>
       </section>
 
-      <section class="historias">
+      <section class="historias animate">
         <div class="container">
           <h2>Historias de Estudiantes</h2>
-          <article>
-            <h3>María García – Estancia en Francia</h3>
-            <p>
-              "Ir a Francia me ayudó a mejorar mi francés y a descubrir una
-              cultura fascinante. Durante mis meses en Lyon, hice amigos
-              increíbles, probé comida deliciosa y visité lugares que nunca
-              había imaginado. Lo más importante fue que aprendí a desenvolverme
-              sola, lo que fortaleció mi confianza."
-            </p>
-          </article>
-          <article>
-            <h3>Pedro Jiménez – Estancia en Países Bajos</h3>
-            <p>
-              "Participar en Erasmus me permitió desarrollar habilidades como la
-              resolución de problemas y la adaptabilidad. Vivir en un país con
-              una cultura tan diferente a la nuestra fue un desafío y una
-              oportunidad. Regresé a España con una perspectiva completamente
-              nueva sobre la educación y la vida."
-            </p>
-          </article>
+          <div class="historias-grid">
+            <article class="historia-card">
+              <h3>María García — Estancia en Francia</h3>
+              <p>
+                "Ir a Francia me ayudó a mejorar mi francés y a descubrir una
+                cultura fascinante. Durante mis meses en Lyon, hice amigos
+                increíbles, probé comida deliciosa y visité lugares que nunca
+                había imaginado. Lo más importante fue que aprendí a
+                desenvolverme sola, lo que fortaleció mi confianza."
+              </p>
+            </article>
+            <article class="historia-card">
+              <h3>Pedro Jiménez — Estancia en Países Bajos</h3>
+              <p>
+                "Participar en Erasmus me permitió desarrollar habilidades como
+                la resolución de problemas y la adaptabilidad. Vivir en un país
+                con una cultura tan diferente a la nuestra fue un desafío y una
+                oportunidad. Regresé a España con una perspectiva completamente
+                nueva sobre la educación y la vida."
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="historias">
+      <section class="historias animate">
         <div class="container">
           <h2>Historias de Profesores</h2>
-          <article>
-            <h3>Isabel Martín – Coordinadora Erasmus</h3>
-            <p>
-              "Como profesora, participar en Erasmus ha sido una experiencia
-              profesional enriquecedora. Compartir metodologías con colegas de
-              otros países me ha permitido traer nuevas ideas a nuestras aulas,
-              mejorando la educación de nuestros estudiantes."
-            </p>
-          </article>
-          <article>
-            <h3>Antonio López – Profesor visitante en Alemania</h3>
-            <p>
-              "Erasmus no solo es para los alumnos. Mi experiencia enseñando en
-              un instituto alemán fue transformadora. Me inspiró a integrar
-              enfoques internacionales en mis clases y a motivar a los
-              estudiantes a participar en el programa."
-            </p>
-          </article>
+          <div class="historias-grid">
+            <article class="historia-card">
+              <h3>Isabel Martín — Coordinadora Erasmus</h3>
+              <p>
+                "Como profesora, participar en Erasmus ha sido una experiencia
+                profesional enriquecedora. Compartir metodologías con colegas de
+                otros países me ha permitido traer nuevas ideas a nuestras
+                aulas, mejorando la educación de nuestros estudiantes."
+              </p>
+            </article>
+            <article class="historia-card">
+              <h3>Antonio López — Profesor visitante en Alemania</h3>
+              <p>
+                "Erasmus no solo es para los alumnos. Mi experiencia enseñando
+                en un instituto alemán fue transformadora. Me inspiró a integrar
+                enfoques internacionales en mis clases y a motivar a los
+                estudiantes a participar en el programa."
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section class="gallery-section animate">
         <div class="container">
           <h2>Galería Erasmus</h2>
-          <p>
-            Explora algunos de los momentos destacados del programa Erasmus:
-          </p>
           <div class="gallery">
             <img src="images/Estudiantes1.jpg" alt="Estudiantes en clase" />
-            <img src="images/Estudiantes2.jpg" alt="" />
-            <img src="images/Estudiantes3.jpg" alt="" />
+            <img
+              src="images/Estudiantes2.jpg"
+              alt="Estudiantes en actividades"
+            />
+            <img src="images/Estudiantes3.jpg" alt="Estudiantes en excursión" />
             <img src="images/Excursión1.jpg" alt="Excursión cultural" />
-            <img src="images/Excursión2.jpg" alt="" />
-            <img src="images/Excursión3.jpg" alt="" />
+            <img src="images/Excursión2.jpg" alt="Visita cultural" />
+            <img src="images/Excursión3.jpg" alt="Actividad grupal" />
             <img src="images/Grupo1.jpg" alt="Grupo de estudiantes" />
-            <img src="images/Grupo2.jpg" alt="" />
-            <img src="images/Grupo3.jpg" alt="" />
+            <img src="images/Grupo2.jpg" alt="Estudiantes internacional" />
+            <img src="images/Grupo3.jpg" alt="Grupo Erasmus" />
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>
-        &copy; 2024 IES Cardenal López de Mendoza. Todos los derechos
-        reservados.
-      </p>
+      <div class="container">
+        <p>
+          &copy; 2024 IES Cardenal López de Mendoza. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

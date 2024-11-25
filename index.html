@@ -4,179 +4,190 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programa Erasmus - IES Cardenal López de Mendoza</title>
+    <link rel="icon" href="images/favicon.ico" type="image/svg+xml" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="header__container container">
-        <h1 class="header__logo">Programa Erasmus</h1>
+        <a href="index.html" class="header__logo">Programa Erasmus</a>
+
         <nav class="header__nav">
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Inicio</a></li>
-            <li>
-              <a href="historias.html" class="nav__link">Historias</a>
-            </li>
-            <li>
-              <a href="recursos.html" class="nav__link">Recursos</a>
-            </li>
+            <li><a href="historias.html" class="nav__link">Historias</a></li>
+            <li><a href="recursos.html" class="nav__link">Recursos</a></li>
           </ul>
         </nav>
+
+        <button class="mobile-menu-button" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero" data-animate>
-      <div class="container">
-        <h1 class="hero__title">Bienvenido al Programa Erasmus</h1>
-        <p class="hero__text">
-          Descubre las oportunidades educativas y culturales que Erasmus tiene
-          para ti en el IES Cardenal López de Mendoza.
-        </p>
-        <a href="#que-es" class="hero__button">Más información</a>
-      </div>
-    </section>
-
-    <!-- ¿Qué es Erasmus? -->
-    <section id="que-es" data-animate>
-      <div class="container">
-        <h2>¿Qué es el Programa Erasmus?</h2>
-        <p>
-          Erasmus es una iniciativa de la Unión Europea que promueve el
-          intercambio de estudiantes, profesores y personal educativo entre
-          instituciones académicas de distintos países.
-        </p>
-        <p>
-          En el IES Cardenal López de Mendoza, este programa permite a nuestros
-          estudiantes vivir una experiencia internacional única que enriquecerá
-          su formación académica y personal.
-        </p>
-      </div>
-    </section>
-
-    <!-- Objetivos -->
-    <section id="objetivos" data-animate>
-      <div class="container">
-        <h2>Objetivos del Programa Erasmus</h2>
-        <ul class="objectives__list">
-          <li>
-            Fomentar la movilidad internacional para nuestros estudiantes.
-          </li>
-          <li>Promover el aprendizaje de idiomas.</li>
-          <li>Desarrollar competencias interculturales.</li>
-          <li>Fortalecer la empleabilidad de nuestros alumnos.</li>
+    <div class="mobile-menu">
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="historias.html" class="nav__link">Historias</a></li>
+          <li><a href="recursos.html" class="nav__link">Recursos</a></li>
         </ul>
-      </div>
-    </section>
+      </nav>
+    </div>
+    <div class="mobile-menu-overlay"></div>
 
-    <!-- Destinos -->
-    <section id="destinos" data-animate>
-      <div class="container">
-        <img src="./images/destinations.png" alt="" width="500" height="" />
-        <div class="wrapper">
-          <h2>Destinos Erasmus</h2>
-          <p>
-            Gracias al programa Erasmus, nuestros estudiantes pueden estudiar en
-            diversos países europeos, como:
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container">
+          <h1 class="hero__title animate">Bienvenido al Programa Erasmus</h1>
+          <p class="hero__text animate">
+            Descubre las oportunidades educativas y culturales que Erasmus tiene
+            para ti en el IES Cardenal López de Mendoza.
           </p>
-          <ul class="destinations__list">
-            <li>Italia</li>
-            <li>Francia</li>
-            <li>Alemania</li>
-            <li>Reino Unido</li>
-            <li>Países Bajos</li>
+          <a href="#que-es" class="hero__button animate">Más información</a>
+        </div>
+      </section>
+
+      <section id="que-es" class="animate">
+        <div class="container">
+          <h2>¿Qué es el Programa Erasmus?</h2>
+          <p>
+            Erasmus es una iniciativa de la Unión Europea que promueve el
+            intercambio de estudiantes, profesores y personal educativo entre
+            instituciones académicas de distintos países.
+          </p>
+          <p>
+            En el IES Cardenal López de Mendoza, este programa permite a
+            nuestros estudiantes vivir una experiencia internacional única que
+            enriquecerá su formación académica y personal.
+          </p>
+        </div>
+      </section>
+
+      <section id="objetivos" class="animate">
+        <div class="container">
+          <h2>Objetivos del Programa Erasmus</h2>
+          <ul class="objectives__list">
+            <li>
+              Fomentar la movilidad internacional para nuestros estudiantes.
+            </li>
+            <li>Promover el aprendizaje de idiomas.</li>
+            <li>Desarrollar competencias interculturales.</li>
+            <li>Fortalecer la empleabilidad de nuestros alumnos.</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Inscripción -->
-    <section id="inscripcion" data-animate>
-      <div class="container">
-        <h2>Proceso de Inscripción</h2>
-        <p>¿Quieres participar en el programa Erasmus? Sigue estos pasos:</p>
-        <ul>
-          <li>
-            <strong>Convocatoria:</strong> Consulta las fechas en nuestra web o
-            en el tablón de anuncios del centro.
-          </li>
-          <li>
-            <strong>Requisitos:</strong> Cumple con los requisitos de idioma y
-            expediente académico.
-          </li>
-          <li>
-            <strong>Selección:</strong> Participa en el proceso de evaluación y
-            entrevistas.
-          </li>
-          <li>
-            <strong>Preparación:</strong> Recibe formación sobre el idioma, el
-            destino y las expectativas del programa.
-          </li>
-          <li>
-            <strong>Estancia:</strong> Vive una experiencia única con el apoyo
-            de los coordinadores Erasmus.
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section id="destinos" class="animate">
+        <div class="container">
+          <img src="./images/destinations.png" alt="" width="500" height="" />
+          <div class="wrapper">
+            <h2>Destinos Erasmus</h2>
+            <p>
+              Gracias al programa Erasmus, nuestros estudiantes pueden estudiar
+              en diversos países europeos, como:
+            </p>
+            <ul class="destinations__list">
+              <li>Italia</li>
+              <li>Francia</li>
+              <li>Alemania</li>
+              <li>Reino Unido</li>
+              <li>Países Bajos</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios" data-animate>
-      <div class="container">
-        <h2>Testimonios</h2>
-        <blockquote>
-          <p>
-            "Mi experiencia en Italia fue increíble. No solo mejoré mi italiano,
-            sino que también hice amigos de todo el mundo. Esta experiencia me
-            ha cambiado la vida."
-          </p>
-          <footer>— Ana Rodríguez, Estudiante de Erasmus en Italia</footer>
-        </blockquote>
-        <blockquote>
-          <p>
-            "Al principio estaba nervioso por el idioma, pero el apoyo del IES
-            Cardenal López de Mendoza fue fundamental. Ahora, hablo alemán con
-            fluidez."
-          </p>
-          <footer>— Luis Pérez, Estudiante de Erasmus en Alemania</footer>
-        </blockquote>
-      </div>
-    </section>
+      <section id="inscripcion" class="animate">
+        <div class="container">
+          <h2>Proceso de Inscripción</h2>
+          <p>¿Quieres participar en el programa Erasmus? Sigue estos pasos:</p>
+          <ul>
+            <li>
+              <strong>Convocatoria:</strong> Consulta las fechas en nuestra web
+              o en el tablón de anuncios del centro.
+            </li>
+            <li>
+              <strong>Requisitos:</strong> Cumple con los requisitos de idioma y
+              expediente académico.
+            </li>
+            <li>
+              <strong>Selección:</strong> Participa en el proceso de evaluación
+              y entrevistas.
+            </li>
+            <li>
+              <strong>Preparación:</strong> Recibe formación sobre el idioma, el
+              destino y las expectativas del programa.
+            </li>
+            <li>
+              <strong>Estancia:</strong> Vive una experiencia única con el apoyo
+              de los coordinadores Erasmus.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Contacto -->
-    <section id="contacto" data-animate>
-      <div class="container">
-        <h2>Contacto</h2>
-        <p>¿Tienes preguntas? Contáctanos:</p>
-        <ul class="contact__info">
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:erasmus@iescardenallm.es"
-              >erasmus@iescardenallm.es</a
-            >
-          </li>
-          <li><strong>Teléfono:</strong> +34 947 25 76 48</li>
-          <li>
-            <strong>Dirección:</strong> Pl. Luis Martín Santos, 0, 09002 Burgos
-          </li>
-        </ul>
-        <p->Síguenos en redes sociales:</p->
-        <ul class="contact__info">
-          <li><a href="#">Instagram: @erasmus_iesclm</a></li>
-          <li><a href="#">Twitter: @erasmus_iesclm</a></li>
-          <li><a href="#">Facebook: @ErasmusIESCLM</a></li>
-        </ul>
-      </div>
-    </section>
+      <section id="testimonios" class="animate">
+        <div class="container">
+          <h2>Testimonios</h2>
+          <blockquote class="testimonial">
+            <p>
+              "Mi experiencia en Italia fue increíble. No solo mejoré mi
+              italiano, sino que también hice amigos de todo el mundo. Esta
+              experiencia me ha cambiado la vida."
+            </p>
+            <footer>— Ana Rodríguez, Estudiante de Erasmus en Italia</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>
+              "Al principio estaba nervioso por el idioma, pero el apoyo del IES
+              Cardenal López de Mendoza fue fundamental. Ahora, hablo alemán con
+              fluidez."
+            </p>
+            <footer>— Luis Pérez, Estudiante de Erasmus en Alemania</footer>
+          </blockquote>
+        </div>
+      </section>
 
-    <!-- Footer -->
+      <section id="contacto" class="animate">
+        <div class="container">
+          <h2>Contacto</h2>
+          <p>¿Tienes preguntas? Contáctanos:</p>
+          <ul class="contact__info">
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:erasmus@iescardenallm.es"
+                >erasmus@iescardenallm.es</a
+              >
+            </li>
+            <li><strong>Teléfono:</strong> +34 947 25 76 48</li>
+            <li>
+              <strong>Dirección:</strong> Pl. Luis Martín Santos, 0, 09002
+              Burgos
+            </li>
+          </ul>
+          <p>Síguenos en redes sociales:</p>
+          <ul class="contact__info">
+            <li><a href="#">Instagram: @erasmus_iesclm</a></li>
+            <li><a href="#">Twitter: @erasmus_iesclm</a></li>
+            <li><a href="#">Facebook: @ErasmusIESCLM</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-      <p>
-        &copy; 2024 IES Cardenal López de Mendoza. Todos los derechos
-        reservados.
-      </p>
+      <div class="container">
+        <p>
+          &copy; 2024 IES Cardenal López de Mendoza. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
 
-    <script type="module" src="./script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

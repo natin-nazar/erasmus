@@ -4,102 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recursos Erasmus - IES Cardenal López de Mendoza</title>
+    <link rel="icon" href="images/favicon.ico" type="image/svg+xml" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="header__container container">
-        <h1 class="header__logo">Programa Erasmus</h1>
+        <a href="index.html" class="header__logo">Programa Erasmus</a>
+
         <nav class="header__nav">
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Inicio</a></li>
-            <li>
-              <a href="historias.html" class="nav__link">Historias</a>
-            </li>
-            <li>
-              <a href="recursos.html" class="nav__link">Recursos</a>
-            </li>
+            <li><a href="historias.html" class="nav__link">Historias</a></li>
+            <li><a href="recursos.html" class="nav__link">Recursos</a></li>
           </ul>
         </nav>
+
+        <button class="mobile-menu-button" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <div class="mobile-menu">
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="historias.html" class="nav__link">Historias</a></li>
+          <li><a href="recursos.html" class="nav__link">Recursos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
     <main>
-      <section>
+      <section class="hero">
         <div class="container">
-          <h1>Recursos Erasmus: Tu Guía para el Éxito</h1>
-          <p>
+          <h1 class="hero__title animate">
+            Recursos Erasmus: Tu Guía para el Éxito
+          </h1>
+          <p class="hero__text animate">
             Encuentra guías, documentos y herramientas esenciales para preparar
-            tu experiencia Erasmus con éxito. Desde documentación administrativa
-            hasta consejos prácticos, aquí tienes todo lo que necesitas.
+            tu experiencia Erasmus con éxito.
           </p>
         </div>
       </section>
 
-      <section>
+      <section class="recursos animate">
         <div class="container">
           <h2>Documentos Útiles</h2>
-          <ul>
-            <li>
+          <div class="recursos-grid">
+            <div class="recurso-card">
+              <h3>Documentación Esencial</h3>
               <a href="docs/guia_estudiante.pdf" target="_blank"
                 >Guía del Estudiante Erasmus</a
               >
-            </li>
-            <li>
               <a href="docs/checklist_documentacion.pdf" target="_blank"
                 >Checklist de Documentación</a
               >
-            </li>
-            <li>
               <a href="docs/plantilla_carta_motivacion.docx" target="_blank"
                 >Plantilla de Carta de Motivación</a
               >
-            </li>
-            <li>
-              <a href="https://europa.eu/europass/en" target="_blank"
-                >Modelo de Currículum Europeo (Europass)</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <h2>Herramientas de Idiomas</h2>
-          <ul>
-            <li>
+            </div>
+            <div class="recurso-card">
+              <h3>Herramientas de Idiomas</h3>
               <a href="https://www.duolingo.com" target="_blank">Duolingo</a>
-            </li>
-            <li>
               <a href="https://www.babbel.com" target="_blank">Babbel</a>
-            </li>
-            <li>
               <a href="https://www.busuu.com" target="_blank">Busuu</a>
-            </li>
-            <li>
-              <a href="https://erasmusplusols.eu" target="_blank"
-                >Erasmus+ OLS</a
-              >
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="consejos">
+      <section class="consejos animate">
         <div class="container">
           <h2>Consejos Prácticos para la Movilidad</h2>
-          <p>Prepárate para tu estancia con estos consejos:</p>
-          <ul>
-            <li>Adaptarse a una nueva cultura: Sé abierto y flexible.</li>
-            <li>Consejos financieros: Lleva un registro de tus gastos.</li>
-            <li>
-              Apps útiles: Google Maps, Google Translate, y otras específicas
-              del país destino.
-            </li>
-          </ul>
+          <div class="recursos-grid">
+            <div class="recurso-card">
+              <h3>Preparación Cultural</h3>
+              <ul>
+                <li>Investiga sobre la cultura local</li>
+                <li>Aprende frases básicas del idioma</li>
+                <li>Contacta con estudiantes locales</li>
+              </ul>
+            </div>
+            <div class="recurso-card">
+              <h3>Gestión Financiera</h3>
+              <ul>
+                <li>Planifica tu presupuesto mensual</li>
+                <li>Investiga costes de vida locales</li>
+                <li>Considera seguros adicionales</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -110,5 +109,7 @@
         reservados.
       </p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

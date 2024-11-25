@@ -65,6 +65,7 @@ abbr[title] {
 }
 
 a {
+  text-decoration: none;
   background-color: transparent; /* Remove the gray background on active links in IE 10 */
 }
 
@@ -211,6 +212,10 @@ input:focus,
 select:focus,
 textarea:focus {
   outline-width: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Style select like a standard input */
